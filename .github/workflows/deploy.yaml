@@ -17,3 +17,8 @@ jobs:
       - run: docker build -t samuellaudev/multi-nginx ./nginx
       - run: docker build -t samuellaudev/multi-server ./server
       - run: docker build -t samuellaudev/multi-worker ./worker
+
+      - run: docker push samuellaudev/multi-client
+      - run: docker push samuellaudev/multi-nginx
+      - run: docker push samuellaudev/multi-server
+      - run: docker push samuellaudev/multi-worker
